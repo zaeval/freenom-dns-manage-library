@@ -110,9 +110,14 @@ def get_dns_list():
 
 
 def __init__(para_old_ip_address=None, para_username=None, para_password=None, para_manage_dns=None):
+    global old_ip_address
+    global username
+    global password
+    global manage_dns
     old_ip_address = para_old_ip_address
     username = para_username
     password = para_password
     manage_dns = para_manage_dns
+    login(username,password)
 
 
